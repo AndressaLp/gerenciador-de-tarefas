@@ -92,7 +92,7 @@ function Main({ busca }){
                 {filtros && <Filters onFiltrar={setFiltroAtivo}/>}
                 {tarefas.length === 0 ? (
                     <div className="flex flex-col items-center m-auto opacity-55">
-                        <img className="w-40 sm:w-44 md:w-48 lg:w-52 xl:w-56" src="../../public/notes.png" alt="bloco de notas" />
+                        <img className="w-40 sm:w-44 md:w-48 lg:w-52 xl:w-56" src="/notes.png" alt="bloco de notas" />
                         <p className="text-xs sm:text-sm md:text-base text-wrap w-28 sm:w-32 md:w-36 text-center uppercase">nenhuma tarefa foi criada ainda</p>
                     </div>
                 ) : (
@@ -104,7 +104,7 @@ function Main({ busca }){
                         </div>
                 ) : (
                         <div className="flex flex-col items-center m-auto opacity-55">
-                            <img className="w-40 sm:w-44 md:w-48 lg:w-52 xl:w-56" src="../../public/notes.png" alt="bloco de notas" />
+                            <img className="w-40 sm:w-44 md:w-48 lg:w-52 xl:w-56" src="/notes.png" alt="bloco de notas" />
                             <p className="text-xs sm:text-sm md:text-base text-wrap w-28 sm:w-32 md:w-36 text-center uppercase">{filtroAtivo === "Completa" ? "nenhuma tarefa completa ainda" : filtroAtivo === "Vencida" ? "não há tarefa vencida" : "não há tarefa pendente"}</p>
                         </div>
                     )
